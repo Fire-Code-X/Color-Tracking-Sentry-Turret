@@ -1,0 +1,32 @@
+#include <Pixy2.h>
+#include <SPI.h>
+#include <Servo.h>
+
+Servo servoX;
+Servo servoY;
+
+Pixy2 pixy;
+void setup() {
+
+Pixy2 pixy;
+
+servoX.attach(3);
+servoY.attach(5);
+
+Serial.begin(9600);
+
+  
+}
+
+void loop() {
+int i;
+Pixy2 pixy;
+
+servoX.write(pixy.ccc.blocks[i].m_x);
+servoY.write(pixy.ccc.blocks[i].m_y);
+//Serial.print(pixy.ccc.blocks[i]);
+
+
+  
+
+}
